@@ -1,0 +1,19 @@
+.carousel-react-container-app {
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    &:hover {
+      @include pointer;
+    }
+
+    &_arrow {
+      display: inline-block;
+
+      &-right {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,10 +1,12 @@
-import Container from "./components/container/Container";
+import Carousel from "./components/carousel/Carousel";
 import "./assets/stylesheets/main.css";
+import Controls from "./components/controls/Controls";
 
 function App() {
   return (
-    <div>
-      <Container />
+    <div className="carousel-react-container-app">
+      <Controls />
+      <Carousel />
     </div>
   );
 }

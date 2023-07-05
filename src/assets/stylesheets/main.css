@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(./fonts/Roboto-Thin.ttf);
+}
+h1 {
+  font-family: "Margin";
+  font-size: 6.4rem;
+  letter-spacing: -1.5px;
+}
+
+/*# sourceMappingURL=main.css.map */

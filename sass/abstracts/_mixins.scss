@@ -1,0 +1,28 @@
+// Small Mobile <365px
+// Mobile 365px - 600px
+// Tablet 600px - 1000px
+// Desktop >1000px
+
+@mixin mobile {
+  @media screen and (min-width: 365px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin text_headline-1 {
+  font-family: "Margin";
+  font-size: 6.4rem;
+  letter-spacing: -1.5px;
+}

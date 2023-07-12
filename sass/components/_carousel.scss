@@ -5,6 +5,11 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
     &_section {
       &-left {
         grid-column: 1 / span 2;

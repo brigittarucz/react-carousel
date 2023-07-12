@@ -49,6 +49,10 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
+.carousel-react-container-app .main img {
+  width: 100%;
+  object-fit: cover;
+}
 .carousel-react-container-app .main_section-left {
   grid-column: 1/span 2;
   overflow-x: hidden;
@@ -96,7 +100,7 @@ body {
 .carousel-react-container-app .controls_arrow {
   display: inline-block;
 }
-.carousel-react-container-app .controls_arrow-right {
+.carousel-react-container-app .controls_arrow-left {
   transform: rotate(180deg);
 }
 

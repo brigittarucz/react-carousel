@@ -35,14 +35,14 @@ const Controls = ({
     <div className="controls">
       <div
         className="controls_arrow-left controls_arrow"
-        onClick={() => setImage(-1)}
+        onClick={() => setImage(1)}
       >
         <ArrowIcon />
       </div>
       <div className="controls_middle">{reactNode && reactNode}</div>
       <div
         className="controls_arrow-right controls_arrow"
-        onClick={() => setImage(1)}
+        onClick={() => setImage(-1)}
       >
         <ArrowIcon />
       </div>

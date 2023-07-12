@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import generateCarouselSkeleton from "components/utils/generateCarouselSkeleton";
+import React, { ReactNode, useEffect, useState } from "react";
+import generateCarouselSkeleton from "../utils/generateCarouselSkeleton";
 
 const Carousel = ({
   imageNumber,
   imagesCarousel,
 }: {
   imageNumber: number;
-  imagesCarousel: string[];
+  imagesCarousel: ReactNode[];
 }) => {
   const [carousel, setCarousel] = useState(
     generateCarouselSkeleton(null, null, null)

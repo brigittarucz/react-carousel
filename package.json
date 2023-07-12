@@ -1,21 +1,22 @@
 {
   "name": "react-carousel-lwui",
-  "version": "0.8.0",
+  "version": "0.14.0",
+  "license": "MIT",
   "private": false,
   "description": "Lightweight React carousel",
   "author": "briru",
   "keywords": [
     "react",
     "carousel",
-    "lightweight",
     "ui"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
   "files": [
     "dist",
     "README.md"
   ],
+  "types": "dist/main.d.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brigittarucz/react-carousel"
@@ -38,7 +39,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel --extensions .ts,.tsx src/ --out-dir dist --source-maps inline --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel --extensions .ts,.tsx src/lib/ --out-dir dist --source-maps inline --copy-files && cp ./main.d.ts ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "sass --watch ./sass:./src/assets/stylesheets"

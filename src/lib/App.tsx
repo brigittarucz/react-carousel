@@ -11,7 +11,7 @@ function ReactCarousel({
   header?: ReactNode;
 }) {
   const [imageNumber, setImageNumber] = useState(0);
-
+  const [direction, setDirection] = useState<-1 | 0 | 1>(0);
   const imagesCarousel: ReactNode[] = images;
   const reactNode = header ? header : null;
 
@@ -22,8 +22,13 @@ function ReactCarousel({
         setImageNumber={setImageNumber}
         imagesCarouselLength={imagesCarousel.length}
         reactNode={reactNode ? reactNode : null}
+        setDirection={setDirection}
       />
-      <Carousel imageNumber={imageNumber} imagesCarousel={imagesCarousel} />
+      <Carousel
+        imageNumber={imageNumber}
+        imagesCarousel={imagesCarousel}
+        direction={direction}
+      />
     </div>
   );
 }

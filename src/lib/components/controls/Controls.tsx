@@ -6,14 +6,17 @@ const Controls = ({
   setImageNumber,
   imagesCarouselLength,
   reactNode,
+  setDirection,
 }: {
   imageNumber: number;
   setImageNumber: (val: number) => void;
   imagesCarouselLength: number;
   reactNode: ReactNode;
+  setDirection: (val: -1 | 0 | 1) => void;
 }) => {
   const setImage = (direction: number) => {
     if (direction === -1) {
+      setDirection(-1);
       if (imageNumber === 0) {
         const newImageNumber = imagesCarouselLength - 1;
         setImageNumber(newImageNumber);
@@ -22,6 +25,7 @@ const Controls = ({
         setImageNumber(newImageNumber);
       }
     } else if (direction === 1) {
+      setDirection(1);
       if (imageNumber === imagesCarouselLength - 1) {
         setImageNumber(0);
       } else {

@@ -43,6 +43,62 @@ body {
   letter-spacing: -1.5px;
 }
 
+.fadeInRight {
+  animation: fadeInRight 0.5s forwards;
+}
+
+.fadeOutRight {
+  animation: fadeOutRight 0.5s forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
+.fadeInLeft {
+  animation: fadeInLeft 0.5s forwards;
+}
+
+.fadeOutLeft {
+  animation: fadeOutLeft 0.5s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
 .carousel-react-container-app .main {
   width: 100%;
   height: 100%;
@@ -64,13 +120,22 @@ body {
   grid-column: 7/span 2;
   overflow-x: hidden;
 }
-.carousel-react-container-app .main section {
-  border: 1px solid black;
+.carousel-react-container-app .main_section-container {
+  height: 100%;
+}
+.carousel-react-container-app .main_section-noimages {
+  grid-column: 1/span 8;
+  text-align: center;
+  font-size: 20px;
+}
+.carousel-react-container-app .main section img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .carousel-react-container-app .main_image-preview {
   width: 100%;
   height: 40%;
-  border: 1px solid black;
   display: inline-block;
 }
 .carousel-react-container-app .main_image-preview--left {
@@ -83,9 +148,7 @@ body {
 }
 .carousel-react-container-app .main_image-spotlight {
   margin: 0 auto;
-  width: 100%;
   height: 45rem;
-  border: 1px solid black;
 }
 
 .carousel-react-container-app .controls {
@@ -94,11 +157,22 @@ body {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-.carousel-react-container-app .controls:hover {
-  cursor: pointer;
-}
 .carousel-react-container-app .controls_arrow {
   display: inline-block;
+  padding: 0.5rem;
+  padding-right: 0.75rem;
+  border-radius: 0.5rem;
+  padding-left: 0.85rem;
+  padding-top: 0.75rem;
+}
+.carousel-react-container-app .controls_arrow:active, .carousel-react-container-app .controls_arrow:focus {
+  background-color: #f5f5f5;
+  outline: 1px solid #ececec;
+}
+.carousel-react-container-app .controls_arrow:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  transition: background-color 0.25s ease-in;
 }
 .carousel-react-container-app .controls_arrow-left {
   transform: rotate(180deg);

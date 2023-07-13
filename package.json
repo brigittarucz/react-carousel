@@ -42,7 +42,7 @@
     "build": "rm -rf dist && NODE_ENV=production babel --extensions .ts,.tsx src/lib/ --out-dir dist --source-maps inline --copy-files && cp ./main.d.ts ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "sass --watch ./src/sass:./src/assets/stylesheets"
+    "build:css": "sass --watch ./src/sass:./src/lib/assets/stylesheets"
   },
   "eslintConfig": {
     "extends": [

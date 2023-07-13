@@ -27,4 +27,6 @@ Fork the [Github repository](https://github.com/brigittarucz/react-carousel) and
 `npm start`
 `npm run build:css`
 
+Test before creating a PR through building it and integrating it into your project.
+
 ##### 🖥️ Happy hacking!

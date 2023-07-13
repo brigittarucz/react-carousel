@@ -24,17 +24,31 @@
         grid-column: 7 / span 2;
         overflow-x: hidden;
       }
+
+      &-container {
+        height: 100%;
+      }
+
+      &-noimages {
+        grid-column: 1 / span 8;
+        text-align: center;
+        font-size: 20px;
+      }
     }
 
     section {
-      border: 1px solid black;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     &_image {
       &-preview {
         width: 100%;
         height: 40%;
-        border: 1px solid black;
+        // border: 1px solid black;
         display: inline-block;
 
         &--left {
@@ -50,9 +64,7 @@
 
       &-spotlight {
         margin: 0 auto;
-        width: 100%;
         height: 45rem;
-        border: 1px solid black;
       }
     }
   }
